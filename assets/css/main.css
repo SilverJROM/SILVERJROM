@@ -1419,6 +1419,18 @@ body.is-preload #bg:before {
   line-height: 5.5rem;
   border: solid 1px #ffffff;
   border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header .text-logo {
+  font-size: 2rem; /* Adjusted to fit within the 5.5rem circle */
+  color: #ffffff; /* Matches the border color */
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1; /* Ensures vertical centering within the logo */
 }
 
 #header .logo .icon:before {
