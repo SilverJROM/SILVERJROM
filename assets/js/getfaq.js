@@ -39,38 +39,38 @@ $(document).ready(function () {
 
   // Check for cached data
   const cachedData = localStorage.getItem("faqCache");
-  if (cachedData && isCacheValid()) {
-    // Use cached data
-    const { data } = JSON.parse(cachedData);
-    renderFAQs(data);
-  } else {
-    // Fetch new data
-    $.ajax({
-      url: webAppUrl,
-      type: "GET",
-      dataType: "json",
-      success: function (response) {
-        if (response.status === "success" && response.data) {
-          // Cache the data with a timestamp
-          localStorage.setItem(
-            "faqCache",
-            JSON.stringify({
-              data: response.data,
-              timestamp: new Date().getTime(),
-            })
-          );
-          renderFAQs(response.data);
-        } else {
-          $("#faq-list").html(
-            "<p>Error loading FAQs: " + response.message + "</p>"
-          );
-        }
-      },
-      error: function (xhr, status, error) {
-        $("#faq-list").html(
-          "<p>Failed to load FAQs. Please try again later.</p>"
+  //   if (cachedData && isCacheValid()) {
+  //     // Use cached data
+  //     const { data } = JSON.parse(cachedData);
+  //     renderFAQs(data);
+  //   } else {
+  // Fetch new data
+  $.ajax({
+    url: webAppUrl,
+    type: "GET",
+    dataType: "json",
+    success: function (response) {
+      if (response.status === "success" && response.data) {
+        // Cache the data with a timestamp
+        localStorage.setItem(
+          "faqCache",
+          JSON.stringify({
+            data: response.data,
+            timestamp: new Date().getTime(),
+          })
         );
-      },
-    });
-  }
+        renderFAQs(response.data);
+      } else {
+        $("#faq-list").html(
+          "<p>Error loading FAQs: " + response.message + "</p>"
+        );
+      }
+    },
+    error: function (xhr, status, error) {
+      $("#faq-list").html(
+        "<p>Failed to load FAQs. Please try again later.</p>"
+      );
+    },
+  });
+  //   }
 });
