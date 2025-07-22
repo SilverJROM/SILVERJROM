@@ -1,15 +1,29 @@
 <!DOCTYPE html>
-<!--
-	Dimension by [AgJ]
-	html5up.net | @silverJROM
--->
-<html>
+<html lang="en">
   <head>
-    <title>silverJROM APP</title>
+    <title>silverJROM APP - Business Automation Solutions</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <meta
+      name="description"
+      content="silverJROM offers automation solutions for businesses, including Telegram bots, websites, and more to streamline inquiries, processes, and customer service."
+    />
+    <meta
+      name="keywords"
+      content="business automation, Telegram bot, website development, silverJROM, customer service automation"
+    />
+    <meta property="og:title" content="silverJROM APP" />
+    <meta
+      property="og:description"
+      content="Automate your business with silverJROM's Telegram bots and custom websites."
+    />
+    <meta property="og:image" content="images/QRCode_AGJ.png" />
+    <meta
+      property="og:url"
+      content="https://silverjrom.github.io/SILVERJROM/"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript
@@ -20,28 +34,33 @@
     <!-- Wrapper -->
     <div id="wrapper">
       <!-- Header -->
-      <header id="header">
+      <header id="header" aria-label="Site Header">
         <div class="logo">
-          <!-- <span class="icon fa-gem"></span> -->
           <span class="text-logo">[AGJ]</span>
         </div>
         <div class="content">
           <div class="inner">
             <h1>silverJROM</h1>
-            <p>
-              specialty is helping your business via automation<br />
-              automation for business [inquiries, processes, CSR, etc]
-            </p>
+            <div class="loading-container" aria-live="polite">
+              <p>Loading details... <span class="spinner"></span></p>
+            </div>
           </div>
         </div>
         <nav>
           <ul>
-            <li><a href="#intro">Intro</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#testimonial">Testimonials</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <!-- <li><a href="#elements">Elements</a></li> -->
+            <li>
+              <a href="#intro" aria-label="Introduction Section">Intro</a>
+            </li>
+            <li>
+              <a href="#products" aria-label="Products Section">Services</a>
+            </li>
+            <li><a href="#faq" aria-label="FAQ Section">FAQ</a></li>
+            <li>
+              <a href="#testimonials" aria-label="Testimonials Section"
+                >Testimonials</a
+              >
+            </li>
+            <li><a href="#contact" aria-label="Contact Section">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -49,170 +68,118 @@
       <!-- Main -->
       <div id="main">
         <!-- Intro -->
-        <article id="intro">
+        <article id="intro" aria-label="Introduction">
           <h2 class="major">Intro</h2>
-          <span class="image main"
-            ><img src="images/Code_INTRO.png" alt=""
-          /></span>
-          <p>
-            For over 20 years, I thrived as a computer programmer and
-            consultant, working closely with businesses to solve their
-            challenges using technology. My passion for understanding business
-            operations and managing money inspired me to explore creative ways
-            to improve how companies work. This curiosity led me to embrace
-            automation, finding new tools and ideas to make everyday tasks
-            simpler, faster, and more efficient for businesses of all sizes.
-          </p>
-          <p>
-            Now, I design user-friendly Telegram bots and websites to help
-            companies manage customer inquiries, share FAQs, showcase products,
-            and track important details like inventory and client information.
-            As a consultant, I guide businesses in choosing the right automation
-            tools to fit their needs, ensuring smooth operations and less manual
-            work. My mission is to use my skills to build solutions that save
-            time, reduce stress, and help businesses grow in today’s fast-paced
-            world.
-          </p>
+          <span class="image main">
+            <img
+              src="images/Code_INTRO.png"
+              alt="Introduction Image"
+              onerror="this.src='images/fallback.png'; this.alt='Fallback Image'"
+            />
+          </span>
+          <div class="loading-container" aria-live="polite">
+            <p>Loading details... <span class="spinner"></span></p>
+            <p></p>
+          </div>
         </article>
 
-        <!-- Work -->
-        <article id="work">
-          <h2 class="major">Telegram BOTS</h2>
-          <span class="image main"><img src="images/TG_BOT.png" alt="" /></span>
-          <p>
-            Leveraging my expertise in software engineering, I develop Telegram
-            bots to streamline business operations by automating customer
-            interactions. These bots efficiently handle inquiries, provide
-            tailored offers, deliver FAQs, and showcase testimonials, creating a
-            seamless user experience. By integrating with business systems, they
-            ensure real-time responses, reduce manual workload, and enhance
-            customer engagement, allowing businesses to focus on core operations
-            while maintaining a professional, responsive presence.
-          </p>
-          <p>
-            Beyond customer service, my Telegram bots automate critical business
-            processes, such as sending targeted updates and promotional offers
-            to customers based on their preferences or behavior. They also log
-            essential data like sales, product inventory, and customer
-            interactions, providing businesses with valuable insights for
-            decision-making. With secure, scalable solutions, these bots
-            optimize efficiency, cut operational costs, and empower businesses
-            to stay competitive in a fast-paced digital landscape
-          </p>
-          <!-- <h2 class="major">TradingView</h2>
-          <h3>indicators/strategies</h3>
-          <span class="image main"
-            ><img src="images/TV_Strat.png" alt=""
-          /></span>
-          <p>
-            With a focus on trading proficiency, I specialize in crafting
-            trend-following indicators and strategies on TradingView to empower
-            data-driven investing. By leveraging my programming expertise, I
-            design custom tools that identify market trends, momentum, and key
-            entry/exit points, helping traders optimize their decisions. These
-            indicators, built with precision, analyze price action and market
-            signals, while my strategies integrate risk management and clear
-            rules to enhance consistency and performance in dynamic financial
-            markets.
-          </p> -->
+        <!-- Products -->
+        <article id="products" aria-label="Products">
+          <h2 class="major">Services</h2>
+          <span class="image main">
+            <img
+              src="images/TG_BOT.png"
+              alt="Product Image"
+              onerror="this.src='images/fallback.png'; this.alt='Fallback Image'"
+            />
+          </span>
+          <div class="loading-container" aria-live="polite">
+            <p>Loading products... <span class="spinner"></span></p>
+          </div>
         </article>
 
-        <!-- Testimonial -->
-        <article id="testimonial">
-          <h2 class="major">Testimonial</h2>
-          <span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-          <p>TBD</p>
-          <!-- <span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-          <p>TBD</p> -->
+        <!-- Testimonials -->
+        <article id="testimonials" aria-label="Testimonials">
+          <h2 class="major">Testimonials</h2>
+          <span class="image main">
+            <img
+              src="images/testimonials-banner.jpg"
+              alt="Testimonial Image"
+              onerror="this.src='images/fallback.png'; this.alt='Fallback Image'"
+            />
+          </span>
+          <div class="loading-container" aria-live="polite">
+            <p>Loading testimonials... <span class="spinner"></span></p>
+          </div>
         </article>
-
-        <!-- About -->
-        <!-- <article id="about">
-          <h2 class="major">About</h2>
-          <span class="image main"
-            ><img src="images/Code_INTRO.png" alt=""
-          /></span>
-          <p>
-            I harness over 20 years of software engineering expertise to create
-            custom Telegram bots that transform business operations. These bots
-            automate customer interactions, deliver tailored offers, manage
-            FAQs, and log critical data like sales and inventory, ensuring
-            seamless, real-time engagement. Designed for scalability and
-            security, my solutions reduce manual workloads, boost efficiency,
-            and empower businesses to maintain a responsive, professional
-            presence in a competitive digital landscape.
-          </p>
-          <p>
-            My passion for finance drives my work in developing TradingView
-            indicators and strategies, tailored to empower data-driven
-            investing. Leveraging my programming skills, I craft trend-following
-            tools that identify market momentum, key entry/exit points, and
-            incorporate robust risk management. These custom indicators and
-            strategies help traders navigate dynamic financial markets with
-            precision and confidence, optimizing performance through clear,
-            actionable insights. Connect via my Telegram bot to explore how I
-            can elevate your business or trading journey.
-          </p>
-        </article> -->
 
         <!-- FAQ -->
-        <article id="faq">
+        <article id="faq" aria-label="Frequently Asked Questions">
           <h2 class="major">FAQ</h2>
-          <span class="image main"
-            ><img src="images/Code_INTRO.png" alt=""
-          /></span>
-          <div id="faq-list" class="faq-list">
+          <span class="image main">
+            <img
+              src="images/FAQ_Banner1.jpeg"
+              alt="FAQ Image"
+              onerror="this.src='images/fallback.png'; this.alt='Fallback Image'"
+            />
+          </span>
+          <div id="faq-list" class="faq-list" aria-live="polite">
             <p>Loading FAQs... <span class="spinner"></span></p>
           </div>
-          <style>
-            .spinner {
-              display: inline-block;
-              width: 16px;
-              height: 16px;
-              border: 2px solid #ffffff;
-              border-top: 2px solid transparent;
-              border-radius: 50%;
-              animation: spin 1s linear infinite;
-            }
-            @keyframes spin {
-              to {
-                transform: rotate(360deg);
-              }
-            }
-          </style>
         </article>
 
         <!-- Contact -->
-        <article id="contact">
+        <article id="contact" aria-label="Contact Information">
           <h2 class="major">Contact</h2>
           <section>
-            <p>for more details contact me on my telegram bot</p>
+            <p>
+              Reach out to discuss how I can help automate your business! Use my
+              Telegram bot or social media to get in touch.
+            </p>
             <p>
               Telegram Bot:
-              <a href="https://t.me/SilverJROM_BOT">@SilverJROM_BOT</a>
+              <a
+                href="https://t.me/SilverJROM_BOT"
+                target="_blank"
+                rel="noopener"
+                >@SilverJROM_BOT</a
+              >
             </p>
-            <img src="images/QRCode_AGJ.png" alt="Telegram QR Code" />
-            <p></p>
+            <img
+              src="images/QRCode_AGJ.png"
+              alt="Telegram QR Code for SilverJROM Bot"
+              onerror="this.src='images/fallback.png'; this.alt='Fallback QR Code'"
+            />
+            <form
+              id="contact-form"
+              action="https://formspree.io/f/your-form-id"
+              method="POST"
+            >
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+              <button type="submit">Send Message</button>
+            </form>
           </section>
           <ul class="icons">
             <li>
               <a
                 href="https://www.x.com/silverjrom"
                 class="icon brands fa-twitter"
+                target="_blank"
+                rel="noopener"
                 ><span class="label">X</span></a
               >
             </li>
-            <!-- <li>
-              <a
-                href="https://www.youtube.com/@SilverJROM"
-                class="icon brands fa-youtube"
-                ><span class="label">youtube</span></a
-              >
-            </li> -->
             <li>
               <a
                 href="https://github.com/SilverJROM"
                 class="icon brands fa-github"
+                target="_blank"
+                rel="noopener"
                 ><span class="label">GitHub</span></a
               >
             </li>
@@ -223,8 +190,13 @@
       <!-- Footer -->
       <footer id="footer">
         <p class="copyright">
-          &copy; [AgJ]. Design:
-          <a href="https://silverjrom.github.io/SILVERJROM/">silverJROM</a>.
+          © [AgJ] <span id="current-year"></span>. Design:
+          <a
+            href="https://silverjrom.github.io/SILVERJROM/"
+            target="_blank"
+            rel="noopener"
+            >silverJROM</a
+          >.
         </p>
       </footer>
     </div>
@@ -238,6 +210,11 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/getfaq.js"></script>
+    <script src="assets/js/getsitedtls.js"></script>
+    <script>
+      // Dynamically set the current year in the footer
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
   </body>
 </html>
