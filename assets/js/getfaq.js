@@ -2,7 +2,7 @@
 $(document).ready(function () {
   // Replace with your Google Apps Script web app URL
   const webAppUrl =
-    "https://script.google.com/macros/s/AKfycbwNMI1Q8M99CGQ1MSiI5VJPrdTrwWIHLwdIsfvMfIbRqnQJ6u08gFllvGo80RRijHvm/exec";
+    "https://script.google.com/macros/s/AKfycbxIOfUa2CkaCfw0h7uwyQnkmVIyLD_MnbSL5byzcg5gjnfoGbOtS2TfCiiC02PoPKs/exec";
 
   // Function to check if cached data is valid (less than 24 hours old)
   function isCacheValid() {
